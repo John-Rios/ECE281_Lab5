@@ -29,22 +29,24 @@ _________________________________________________________________
 First Program Instruction Cycle:
 
 First Function – LADI: Loads a value of 8 into the accumulator. (5-15ns: Fetch), (15-25ns: Decode), (25-35ns: Execute)
- 
+
+![pic1] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic1.png)
 
 Second Function– ADDI: Adds a value of 1 to the accumulator. (35-45ns: Fetch), (45-55ns: Decode), (55-65ns: Execute)
 
- 
+![pic2] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic2.png)
 
 Third Function – OUT: Outputs the accumulator value to port 3. (65-75ns: Fetch), (75-85ns: Decode), (85-95ns: Execute)
 
- 
+![pic3] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic3.png)
 
 Fourth Function – JN: Jumps to ADDI when the accumulator value is negative. (95-105ns: Fetch), (105-115ns: Decode), (115-125ns: Decode LoAddr), (125-135ns: Decode HiAdder), (135-145ns: Execute)
 	
- 
+![pic4] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic4.png)
 
 Fifth Function – JMP: Jumps to itself to create an infinite loop. (995-1005ns: Fetch), (1005-1015ns: Decode), (1015-1025ns: Decode LoAddr), (1025-1035ns: Decode HiAdder), (1035-1045ns: Execute) 
 
+![pic5] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic5.png)
 ________________________________________________________________________
 
 First Program Errors and Debugging:
