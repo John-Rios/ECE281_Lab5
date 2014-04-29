@@ -20,6 +20,8 @@ Questions:
 _________________________________________________________________
 First Program Operation:
 
+![pic0] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic0.png)
+
 The first program we worked on counts in hex. However, the program initiates by loading an 8 into the accumulator. Once an 8 is loaded, the program outputs the current number in the accumulator to output port 3. The program then checks the value of the accumulator for a negative number. If the value is negative number it adds 1 and outputs to port 3. Once a positive number is detected the program enters an infinite loop where 0 is outputted to port 3. The program remains here until the user resets the program allowing it to start from a loaded value of 8 again.
 
 _________________________________________________________________
