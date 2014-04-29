@@ -9,9 +9,9 @@ Questions:
     b. IRLd is high
     c. ACCLd is low
 
-2)	MARLoLd, PCLd,R_W, and MemSel_L.  I/O execute should be the next state. 
+2) MARLoLd, PCLd,R_W, and MemSel_L.  I/O execute should be the next state. 
 
-3)	IR, ALessZero, and AEqZero are the signals sent from the datapath to the controller. 
+3) IR, ALessZero, and AEqZero are the signals sent from the datapath to the controller. 
 
 4)  The ADDI function adds the next value to the current value of the accumulator meaning that during the operational cycle, the value of the accumulator will change. In order to load the correct value from the accumulator, the ACCLd has to be high. 
 
@@ -30,23 +30,23 @@ First Program Instruction Cycle:
 
 First Function – LADI: Loads a value of 8 into the accumulator. (5-15ns: Fetch), (15-25ns: Decode), (25-35ns: Execute)
 
-![pic1] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic1.png)
+![pic1] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic11.png)
 
 Second Function– ADDI: Adds a value of 1 to the accumulator. (35-45ns: Fetch), (45-55ns: Decode), (55-65ns: Execute)
 
-![pic2] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic2.png)
+![pic2] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic22.png)
 
 Third Function – OUT: Outputs the accumulator value to port 3. (65-75ns: Fetch), (75-85ns: Decode), (85-95ns: Execute)
 
-![pic3] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic3.png)
+![pic3] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic33.png)
 
 Fourth Function – JN: Jumps to ADDI when the accumulator value is negative. (95-105ns: Fetch), (105-115ns: Decode), (115-125ns: Decode LoAddr), (125-135ns: Decode HiAdder), (135-145ns: Execute)
 	
-![pic4] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic4.png)
+![pic4] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic44.png)
 
 Fifth Function – JMP: Jumps to itself to create an infinite loop. (995-1005ns: Fetch), (1005-1015ns: Decode), (1015-1025ns: Decode LoAddr), (1025-1035ns: Decode HiAdder), (1035-1045ns: Execute) 
 
-![pic5] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic5.png)
+![pic5] (https://raw.github.com/John-Rios/ECE281_Lab5/master/pic55.png)
 ________________________________________________________________________
 
 First Program Errors and Debugging:
@@ -62,8 +62,11 @@ The second program was troublesome for me. I was not able to get the functionali
 ___________________________________________________________________________________
 
 Functionality:
-	A Functionality: Checked by Captain Tremble
-	B Functionality: Unchecked, but correct
-	B Functionality (Cool Counter): Unchecked. Not cool and not functional
+
+A Functionality: Checked by Captain Tremble
+	
+B Functionality: Unchecked, but correct
+	
+A/B Functionality (Cool Counter): Unchecked. Not cool and not functional
 
 ____________________________________________________________________________________
