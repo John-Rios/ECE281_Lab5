@@ -62,8 +62,11 @@ The second program was troublesome for me. I was not able to get the functionali
 ___________________________________________________________________________________
 
 Functionality:
-	A Functionality: Checked by Captain Tremble
-	B Functionality: Unchecked, but correct
-	B Functionality (Cool Counter): Unchecked. Not cool and not functional
+
+A Functionality: Checked by Captain Tremble
+	
+B Functionality: Unchecked, but correct
+	
+A/B Functionality (Cool Counter): Unchecked. Not cool and not functional
 
 ____________________________________________________________________________________
